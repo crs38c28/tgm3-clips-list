@@ -1,6 +1,9 @@
-# twitch-clips
+# Tgm3 twitch clips
 
 > Twitch clips for tgm3
+> from text list to clip list
+
+![screenshot](https://i.imgur.com/pIqL127.png)
 
 ## Build Setup
 
