@@ -15,7 +15,7 @@
           <v-tab-item id="tab-1">
             <v-card class="pa-2" color="teal lighten-5" flat>
               <div>[網頁說明] 本網頁將觀眾剪下的clips 透過twitch的API整合在一起 方便大家觀看</div>
-              <div>[指令說明] 聊天室有個指令「!片」讓各位可以投稿clip一起來壯大我們的精華區ㄛ，只要在聊天室輸入「!片 [clips網址後半部的代碼]」就可以惹是不是很簡單ㄋ。例子: 「!片 DistinctDeerMrDestructoid」</div>
+              <div>[指令說明] 我們有個指令「!片+」讓各位可以投稿clip一起來壯大我們no精華區，只要輸入「!片+ [clips網址後半部的代碼]」就可以惹是不是很簡單ㄋ。例子: 「!片+ DistinctDeerMrDestructoid」</div>
               <div>[標題說明] 新系統會直接抓你在剪輯時命名的標題 讓你可以在Twitch Clips自由更換標題</div>
               <div>[刪除說明] 若輸入錯代碼ID 或標題格式不對 導致影片錯誤的話 請向MOD反應來將影片從表單移除</div>
               <div>[表單連結] <a target="_blank" href="http://twitch.center/customapi/quote/list?token=96a4694e" style="cursor: pointer;">http://twitch.center/customapi/quote/list?token=96a4694e</a> </div>
