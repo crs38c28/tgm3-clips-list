@@ -12,7 +12,7 @@
             Mod
             <v-icon>fab fa-twitch</v-icon>
           </v-tab>
-          <v-tab-item id="tab-1">
+          <v-tab-item value="tab-1">
             <v-card class="pa-2" color="teal lighten-5" flat>
               <div>[網頁說明] 本網頁將觀眾剪下的clips 透過twitch的API整合在一起 方便大家觀看</div>
               <div>[指令說明] 我們有個指令「!片+」讓各位可以投稿clip一起來壯大我們no精華區，只要輸入「!片+ [clips網址後半部的代碼]」就可以惹是不是很簡單ㄋ。例子: 「!片+ DistinctDeerMrDestructoid」</div>
@@ -21,7 +21,7 @@
               <div>[表單連結] <a target="_blank" href="http://twitch.center/customapi/quote/list?token=96a4694e" style="cursor: pointer;">http://twitch.center/customapi/quote/list?token=96a4694e</a> </div>
             </v-card>
           </v-tab-item>
-          <v-tab-item id="tab-2">
+          <v-tab-item value="tab-2">
             <v-card class="pa-2" color="teal lighten-5" flat>
               <v-card-text>
                 <div>表單內格式有問題的Clips: {{errorclips}}</div>
@@ -40,8 +40,8 @@
           <v-flex v-if="!loading" xs12 sm6 md4 lg3 xl2 v-for="(n,index) in Math.min(startcount+1, page_count)" :key="index">
             <v-card color="teal lighten-5" class="ma-1 clipcard">
               <a style="position:relative" :href="clipList[clipList.length-(page-1)*page_count-n].url" target="_blank">
-                <v-card-media class="cardimage" :src="clipList[clipList.length-(page-1)*page_count-n].thumbnail_url" height="200px">
-                </v-card-media>
+                <v-img class="cardimage" :src="clipList[clipList.length-(page-1)*page_count-n].thumbnail_url" height="200px">
+                </v-img>
               </a>
               <v-card-title class="wb">
                 <a :href="clipList[clipList.length-(page-1)*page_count-n]['url']" target="_blank">
@@ -336,7 +336,7 @@ export default {
   color:#1D1F1F;
   text-decoration: underline;
 }
-.card__media__background{
+.v-image__image{
   z-index:3;
 }
 .cardimage::after{
